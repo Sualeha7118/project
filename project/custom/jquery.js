@@ -35,27 +35,19 @@ $(document).ready(function () {
       a = 1;
     }
   });
-  $("#form").submit(function () {
-    let follow = $("#form").serializeArray();
-    var $inputs = $("#form :input");
-    var values = {};
-    $inputs.each(function () {
-      values[this.name] = $(this).val();
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
     });
-    $("#name").append(values.firstname);
-    $("#name1").append(values.lastname);
-    $("#email").append(values.email);
-    $("#phone").append(values.phone);
-    $("#date").append(values.date);
-    $("#member").append(values.members);
-    $("#tour").append(values.tour);
-    $("#button1").append(checked.one);
-    $("#button2").append(checked.two);
-    $("#button3").append(checked.three);
-    $("#time").append(checked.time1);
-    $("#time1").append(checked.time2);
-    $("#time2").append(checked.time3);
-    $("#write").append(values.write1);
-    $("#write1").append(values.write2);
-  });
-});
+  }
+})  

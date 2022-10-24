@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 #head {
   display: flex;
   justify-content: space-between;
@@ -14,9 +15,11 @@
   height: 120px;
   z-index: 1;
 }
+
 #logo {
   height: 100%;
 }
+
 #anchor {
   display: flex;
   justify-content: space-between;
@@ -24,26 +27,32 @@
   width: 600px;
   height: 100%;
 }
+
 .links {
   font-size: 16px;
   text-decoration: none;
   color: white;
   font-weight: 500;
 }
+
 #sun {
   font-size: 24px;
   cursor: pointer;
   color: yellow;
 }
+
 #moon {
   font-size: 21px;
   cursor: pointer;
   color: white;
 }
-.links:hover .active {
+
+.links:hover,
+.active {
   border-bottom: 2px solid rgb(229, 35, 35);
   padding-bottom: 5px;
 }
+
 .line {
   display: flex;
   justify-content: center;
@@ -55,15 +64,18 @@
   border-top: 3px solid #0060ff;
   width: 300px;
 }
+
 #banner {
   overflow: hidden;
 }
+
 #banner {
   background-image: url(../img/faqs.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 650px;
 }
+
 #title {
   font-weight: 800;
   color: white;
@@ -75,89 +87,121 @@
   width: 600px;
   height: 200px;
 }
-.question{
-  margin: 70px;
-}
-.faq {
+
+.faqq {
   text-align: center;
+  font-size: 34px;
+  color: #0060ff;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.our {
+  text-align: center;
+  color: #0060ff;
   font-size: 38px;
-  color: #0060ff;
 }
 
-.we {
-  font-size: 22px;
+.next {
   text-align: center;
-  color: #484c55;
+  font-size: 22px;
 }
 
-.code1 {
-  display: flex;
-  justify-content: center;
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 2px solid rgb(204, 202, 202);
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
 }
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+/* .active:after {
+  content: "\2212";
+} */
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 15px;
+}
+
 .sawal {
-  font-size: 25px;
-  color: #0060ff;
-  width: 500px;
-  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.questions {
+  align-items: center;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.sara {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border-bottom: 1px gray;
+  text-align: left;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 .jawab {
-  font-size: 17px;
-  color: #484c55;
-  width: 700px;
-  margin-top: 20px;
+  font-size: 20px;
 }
 
-
-.tasweer {
-  width: 250px;
-  height: 250px;
-  margin-top: 27px;
-  margin-left: 40px;
-}
-
-.both {
-  margin-left: 30px;
-}
-
-.border {
-  background-color: #7b7c81;
-  width: 800px;
-  height: 3px;
-  margin: 50px 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.q {
-  color: red;
-}
-
-.dono {
-  display: flex;
-}
-#promotion {
-  padding: 80px 0;
-}
-
-.top {
+.have {
   text-align: center;
-  font-size: 38px;
+  font-size: 32px;
   color: #0060ff;
+  margin-top: 70px;
 }
 
-.line {
+.sath {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
-.line > h1 {
-  border-top: 3px solid #0060ff;
-  width: 300px;
-}
 footer {
   display: flex;
   flex-direction: column;
@@ -168,23 +212,27 @@ footer {
   background-color: #0060ff;
   color: white;
 }
+
 footer > div:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
 }
+
 footer > div:first-child > img {
   margin-right: 100px;
   width: 170px;
   height: 170px;
 }
+
 footer > div:first-child > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
 }
+
 #icons {
   margin-top: 40px;
   display: flex;
@@ -192,6 +240,7 @@ footer > div:first-child > div {
   align-items: center;
   width: 200px;
 }
+
 #icons > a {
   width: 40px;
   height: 40px;
@@ -205,12 +254,14 @@ footer > div:first-child > div {
   cursor: pointer;
   border: 2px solid #0060ff;
 }
+
 #icons > a:hover {
   color: white;
   background-color: #0060ff;
   transition: all 0.5s;
   border: 2px solid white;
 }
+
 footer > div:nth-child(2) {
   margin: 30px 0;
   width: 550px;
@@ -218,23 +269,29 @@ footer > div:nth-child(2) {
   justify-content: space-between;
   align-items: center;
 }
+
 footer > div:nth-child(2) > a {
   color: white;
 }
+
 footer > div:nth-child(2) > a:hover {
   text-decoration: underline;
 }
+
 #lnks > div {
   margin-bottom: 6px;
   text-decoration: none;
 }
+
 #lnks > div > span {
   margin-left: 5px;
 }
+
 .number {
   color: white;
   text-decoration: none;
 }
+
 .foot {
   text-decoration: none;
 }

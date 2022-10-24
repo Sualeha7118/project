@@ -99,7 +99,7 @@
 }
 .bgg{
   width: 87%;
-  height: 95vh;
+  height: 90vh;
   background-color: #24748f;
   margin-top: 100px;
   margin-left: 100px;
@@ -108,12 +108,13 @@
   width: 40%;
   height: 60vh;
   display: flex;
-  top: 20px;
+  top: 50px;
+  padding-top: 50px;
   position: absolute;
 }
 .con{
   width: 45%;
-  height: 87vh;
+  height: 80vh;
   background-color: white;
 
   /* float: right; */
@@ -161,7 +162,11 @@
   align-items: center;
 }
 
-
+#map{
+  width: 90%;
+  height: 50vh;
+  margin: 60px 60px 10px;
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -172,6 +177,7 @@ footer {
   background-color: #0060ff;
   color: white;
 }
+
 footer > div:first-child {
   display: flex;
   justify-content: center;
