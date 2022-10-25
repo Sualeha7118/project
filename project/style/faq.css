@@ -1,3 +1,6 @@
+body{
+  cursor: url(plane.cur),default;
+}
 * {
   margin: 0;
   padding: 0;
@@ -35,17 +38,7 @@
   font-weight: 500;
 }
 
-#sun {
-  font-size: 24px;
-  cursor: pointer;
-  color: yellow;
-}
 
-#moon {
-  font-size: 21px;
-  cursor: pointer;
-  color: white;
-}
 
 .links:hover,
 .active {
@@ -100,6 +93,7 @@
   text-align: center;
   color: #0060ff;
   font-size: 38px;
+  margin-top: 70px;
 }
 
 .next {
@@ -108,7 +102,7 @@
 }
 
 .accordion {
-  background-color: #eee;
+  background-color: blue;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -161,8 +155,8 @@
 }
 
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: blue;
+  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -173,7 +167,7 @@
 }
 
 .accordion:hover {
-  background-color: #ccc;
+  background-color: lightskyblue;
 }
 
 .panel {

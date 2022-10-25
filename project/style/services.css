@@ -1,3 +1,6 @@
+body{
+  cursor: url(plane.cur),default;
+}
 * {
   margin: 0;
   padding: 0;
@@ -24,16 +27,7 @@
   width: 600px;
   height: 100%;
 }
-#sun {
-  font-size: 24px;
-  cursor: pointer;
-  color: yellow;
-}
-#moon {
-  font-size: 21px;
-  cursor: pointer;
-  color: white;
-}
+
 .links {
   font-size: 16px;
   text-decoration: none;

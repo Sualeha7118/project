@@ -50,4 +50,26 @@ $(document).ready(function () {
       }
     });
   }
-})  
+  $(document).ready(function () {
+    $("#signupform").validate({
+      rules: {
+        firstname: "required",
+        lastname: "required",
+        email: "required",
+        phone: "required",
+        number: "required",
+        where: "required",
+        anything: "required",
+      },
+      messages: {
+        firstname: "Enter Your First Name",
+        lastname: "Enter Your Last Name",
+        email: "Enter Your Email Address",
+        phone: "Enter Your Phone Number",
+        number: "Please Answer This",
+        where: "Please Answer This",
+        anything: "Any Queries?",
+      },
+    });
+  });
+});

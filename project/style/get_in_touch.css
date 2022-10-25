@@ -1,3 +1,6 @@
+body{
+  cursor: url(plane.cur),default;
+}
 * {
   margin: 0;
   padding: 0;
@@ -30,16 +33,7 @@
   color: white;
   font-weight: 500;
 }
-#sun {
-  font-size: 24px;
-  cursor: pointer;
-  color: yellow;
-}
-#moon {
-  font-size: 21px;
-  cursor: pointer;
-  color: white;
-}
+
 .links:hover,
 .active {
   border-bottom: 2px solid rgb(229, 35, 35);
@@ -99,14 +93,14 @@
 }
 .bgg{
   width: 87%;
-  height: 90vh;
+  height: 110vh;
   background-color: #24748f;
   margin-top: 100px;
   margin-left: 100px;
 }
 .img{
   width: 40%;
-  height: 60vh;
+  height: 80vh;
   display: flex;
   top: 50px;
   padding-top: 50px;
@@ -114,7 +108,7 @@
 }
 .con{
   width: 45%;
-  height: 80vh;
+  height: 100vh;
   background-color: white;
 
   /* float: right; */
@@ -133,6 +127,9 @@
   padding-right: 10px;
   margin-left: 10px;
   margin-top: 10px; 
+}
+.box1 ::after{
+  color: red;
 }
 .box1{
   margin-left: 10px;

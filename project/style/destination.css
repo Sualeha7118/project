@@ -1,3 +1,6 @@
+body{
+  cursor: url(plane.cur),default;
+}
 * {
   margin: 0;
   padding: 0;
@@ -30,16 +33,7 @@
   color: white;
   font-weight: 500;
 }
-#sun {
-  font-size: 24px;
-  cursor: pointer;
-  color: yellow;
-}
-#moon {
-  font-size: 21px;
-  cursor: pointer;
-  color: white;
-}
+
 .links:hover,
 .active {
   border-bottom: 2px solid rgb(229, 35, 35);
