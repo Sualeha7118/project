@@ -1,3 +1,6 @@
+body{
+  cursor: url(plane.cur),default;
+}
 * {
   margin: 0;
   padding: 0;
