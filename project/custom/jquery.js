@@ -62,7 +62,7 @@ $(document).ready(function () {
         anything: "required",
       },
       messages: {
-        firstname: "Enter Your First Name",
+        firstname: "Enter Your First Name"
         lastname: "Enter Your Last Name",
         email: "Enter Your Email Address",
         phone: "Enter Your Phone Number",

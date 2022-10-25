@@ -1,5 +1,6 @@
 body{
   cursor: url(plane.cur),default;
+  background-color: #bedde7;
 }
 * {
   margin: 0;
@@ -108,10 +109,10 @@ body{
   width: 400px;
   height: 280px;
 }
-#heading {
+.heading {
   margin-left: 50px;
 }
-#venu {
+.venu {
   font-weight: 700;
   font-size: 25px;
   margin-bottom: 20px;
@@ -122,7 +123,7 @@ body{
   font-size: 18px;
   margin-bottom: 40px;
 }
-#now {
+.now {
   padding: 10px 22px;
   background-color: #0060ff;
   border-radius: 7px;
@@ -131,7 +132,7 @@ body{
   font-size: 18px;
   font-weight: 700;
 }
-#now:hover {
+.now:hover {
   background-color: rgb(218, 218, 53);
   border-color: rgb(218, 218, 53);
   cursor: pointer;
